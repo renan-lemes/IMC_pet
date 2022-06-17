@@ -31,14 +31,22 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.CmbRaca = new System.Windows.Forms.ComboBox();
+            this.TxtDescricao = new System.Windows.Forms.TextBox();
+            this.CmbTipo = new System.Windows.Forms.ComboBox();
+            this.BtnCalcular = new System.Windows.Forms.Button();
+            this.TxtAltura = new System.Windows.Forms.TextBox();
+            this.TxtPeso = new System.Windows.Forms.TextBox();
+            this.TxtName = new System.Windows.Forms.MaskedTextBox();
+            this.CmbGenero = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.BtnLimpar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -46,71 +54,260 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // comboBox1
+            // CmbRaca
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(286, 126);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 31);
-            this.comboBox1.TabIndex = 1;
+            this.CmbRaca.FormattingEnabled = true;
+            this.CmbRaca.Items.AddRange(new object[] {
+            "Akita",
+            "Basset hound",
+            "Bichon frisé",
+            "Boiadeiro australiano",
+            "Border collie",
+            "Boston terrier",
+            "Boxer",
+            "Buldogue francês",
+            "Budogue inglês",
+            "Bull terrier",
+            "Cane corso",
+            "Cavalier king",
+            "Chihuahua",
+            "Chow chow",
+            "cocker spaniel inglês",
+            "Dachshund",
+            "Dálmata",
+            "Doberman",
+            "Dogo argentino",
+            "Dogue alemão",
+            "Fila brasileiro",
+            "Golden retriver",
+            "Husky siberiano",
+            "Jack russell",
+            "Labrador retriver",
+            "Lhasa apso",
+            "Lulu da pomerânia",
+            "Maltes",
+            "Maltês",
+            "Mastiff inglês",
+            "Mastim tibetano",
+            "Pastor alemão",
+            "Pastor australiano",
+            "Pastor de shetland",
+            "Pequinês",
+            "Pinscher",
+            "Pit bull",
+            "Poodle",
+            "Pug",
+            "Rottweiler",
+            "Schnauzer",
+            "Shar-pei",
+            "Shiba",
+            "Shih tzu",
+            "Staffordshire bull",
+            "Weimaraner",
+            "Yorkshire",
+            "Persa",
+            "Maine Coon",
+            "Gato de pelo",
+            "Gato de bengala",
+            "Siamês",
+            "Sphynx",
+            "Ragdoll",
+            "Munchi",
+            "Scottish fold",
+            "Noruegues da floresta",
+            "Siberiano",
+            "Savannah",
+            "Gato de pelo curto",
+            "Exótico",
+            "Angorá",
+            "Himalaio",
+            "Azul russo",
+            "Gato comum",
+            "Sagrado da birmânia",
+            "Chartreux",
+            "Abissio",
+            "Bombaim",
+            "Kinkalow",
+            "Birmanês",
+            "Oriental",
+            "Ragamuffin",
+            "Somalli",
+            "Singapura",
+            "Curt americano",
+            "British Longhair",
+            "Toyger",
+            "Van turco",
+            "Manês",
+            "Donskoy",
+            "Oriental havana",
+            "Ocicat",
+            "Balinês",
+            "Laperm",
+            "Cymric",
+            "Cornish rex",
+            "Bobtail americano",
+            "Nebelung",
+            "Thai",
+            "Korat",
+            "Tonquinês",
+            "Lykoi",
+            "Peterbald",
+            "Burmillia",
+            "American wirehair",
+            "Oriental longhair"});
+            this.CmbRaca.Location = new System.Drawing.Point(286, 126);
+            this.CmbRaca.Name = "CmbRaca";
+            this.CmbRaca.Size = new System.Drawing.Size(121, 31);
+            this.CmbRaca.TabIndex = 1;
             // 
-            // textBox1
+            // TxtDescricao
             // 
-            this.textBox1.Location = new System.Drawing.Point(456, 226);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(189, 73);
-            this.textBox1.TabIndex = 2;
+            this.TxtDescricao.Location = new System.Drawing.Point(456, 226);
+            this.TxtDescricao.Multiline = true;
+            this.TxtDescricao.Name = "TxtDescricao";
+            this.TxtDescricao.Size = new System.Drawing.Size(189, 73);
+            this.TxtDescricao.TabIndex = 2;
+            this.TxtDescricao.TextChanged += new System.EventHandler(this.TxtDescricao_TextChanged);
             // 
-            // comboBox2
+            // CmbTipo
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(286, 72);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 31);
-            this.comboBox2.TabIndex = 3;
+            this.CmbTipo.FormattingEnabled = true;
+            this.CmbTipo.Location = new System.Drawing.Point(286, 50);
+            this.CmbTipo.Name = "CmbTipo";
+            this.CmbTipo.Size = new System.Drawing.Size(121, 31);
+            this.CmbTipo.TabIndex = 3;
             // 
-            // button1
+            // BtnCalcular
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(589, 115);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 32);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Calcular";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.BtnCalcular.BackColor = System.Drawing.SystemColors.Highlight;
+            this.BtnCalcular.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BtnCalcular.Location = new System.Drawing.Point(589, 115);
+            this.BtnCalcular.Name = "BtnCalcular";
+            this.BtnCalcular.Size = new System.Drawing.Size(104, 32);
+            this.BtnCalcular.TabIndex = 4;
+            this.BtnCalcular.Text = "Calcular";
+            this.BtnCalcular.UseVisualStyleBackColor = false;
+            this.BtnCalcular.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox2
+            // TxtAltura
             // 
-            this.textBox2.Location = new System.Drawing.Point(456, 87);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 31);
-            this.textBox2.TabIndex = 5;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.TxtAltura.Location = new System.Drawing.Point(456, 87);
+            this.TxtAltura.Name = "TxtAltura";
+            this.TxtAltura.Size = new System.Drawing.Size(100, 31);
+            this.TxtAltura.TabIndex = 5;
+            this.TxtAltura.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // textBox3
+            // TxtPeso
             // 
-            this.textBox3.Location = new System.Drawing.Point(456, 145);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 31);
-            this.textBox3.TabIndex = 6;
+            this.TxtPeso.Location = new System.Drawing.Point(456, 147);
+            this.TxtPeso.Name = "TxtPeso";
+            this.TxtPeso.Size = new System.Drawing.Size(100, 31);
+            this.TxtPeso.TabIndex = 6;
             // 
-            // maskedTextBox1
+            // TxtName
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(134, 115);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(112, 31);
-            this.maskedTextBox1.TabIndex = 7;
+            this.TxtName.Location = new System.Drawing.Point(52, 126);
+            this.TxtName.Name = "TxtName";
+            this.TxtName.Size = new System.Drawing.Size(165, 31);
+            this.TxtName.TabIndex = 7;
+            this.TxtName.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
             // 
-            // comboBox3
+            // CmbGenero
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(286, 179);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 31);
-            this.comboBox3.TabIndex = 8;
+            this.CmbGenero.FormattingEnabled = true;
+            this.CmbGenero.Items.AddRange(new object[] {
+            "Masculino",
+            "Feminino"});
+            this.CmbGenero.Location = new System.Drawing.Point(286, 195);
+            this.CmbGenero.Name = "CmbGenero";
+            this.CmbGenero.Size = new System.Drawing.Size(121, 31);
+            this.CmbGenero.TabIndex = 8;
+            this.CmbGenero.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(52, 100);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(141, 23);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Nome do Pet:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Location = new System.Drawing.Point(286, 100);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(64, 23);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Raça:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Location = new System.Drawing.Point(286, 24);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(61, 23);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Tipo:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Location = new System.Drawing.Point(286, 169);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(88, 23);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Genero:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Location = new System.Drawing.Point(456, 61);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(76, 23);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Altura:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Location = new System.Drawing.Point(456, 124);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(63, 23);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Peso:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Location = new System.Drawing.Point(456, 203);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(112, 23);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "Descrição:";
+            // 
+            // BtnLimpar
+            // 
+            this.BtnLimpar.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.BtnLimpar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BtnLimpar.Location = new System.Drawing.Point(589, 61);
+            this.BtnLimpar.Name = "BtnLimpar";
+            this.BtnLimpar.Size = new System.Drawing.Size(104, 32);
+            this.BtnLimpar.TabIndex = 16;
+            this.BtnLimpar.Text = "Limpar";
+            this.BtnLimpar.UseVisualStyleBackColor = false;
+            this.BtnLimpar.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Form1
             // 
@@ -119,16 +316,24 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(794, 447);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.maskedTextBox1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.BtnLimpar);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.CmbGenero);
+            this.Controls.Add(this.TxtName);
+            this.Controls.Add(this.TxtPeso);
+            this.Controls.Add(this.TxtAltura);
+            this.Controls.Add(this.BtnCalcular);
+            this.Controls.Add(this.CmbTipo);
+            this.Controls.Add(this.TxtDescricao);
+            this.Controls.Add(this.CmbRaca);
             this.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Form1";
             this.Text = "Calculadora IMC Pet";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -140,13 +345,21 @@
         #endregion
 
         private ContextMenuStrip contextMenuStrip1;
-        private ComboBox comboBox1;
-        private TextBox textBox1;
-        private ComboBox comboBox2;
-        private Button button1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private MaskedTextBox maskedTextBox1;
-        private ComboBox comboBox3;
+        private ComboBox CmbRaca;
+        private TextBox TxtDescricao;
+        private ComboBox CmbTipo;
+        private Button BtnCalcular;
+        private TextBox TxtAltura;
+        private TextBox TxtPeso;
+        private MaskedTextBox TxtName;
+        private ComboBox CmbGenero;
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private Label label4;
+        private Label label5;
+        private Label label6;
+        private Label label7;
+        private Button BtnLimpar;
     }
 }
