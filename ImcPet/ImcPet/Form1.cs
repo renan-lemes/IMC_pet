@@ -17,12 +17,63 @@ namespace ImcPet
 
         }
 
+        string[] Pesado = new string[]
+        {
+            "",
+        };
+        string[] Medio = new string[] 
+        { 
+            "",
+        };
+        string[] Baixo = new string[] 
+        {
+            "", 
+        };
+
         private void button1_Click(object sender, EventArgs e)
         {
             double Altura = 0;
             double Peso = 0;
             Altura = double.Parse(TxtAltura.Text);
             Peso = double.Parse(TxtPeso.Text);
+
+            if(CmbGenero == "Feminino")
+            {
+
+                //faz um calculo aqui 
+
+                if (CmbRaca == "Pesado") 
+                {
+                    // faz um calculo para a raça pesado
+                    
+                }
+                if (CmbRaca == "Medio")
+                {
+                    // faz o calculo para a raça de proporção media
+
+                }else if(CmbRaca == "Baixo"){ 
+                    // aqui faz o calculo para a raça de menor porte
+
+                }
+            }
+            else if(CmbGenero.Text == "Masculino")
+            {
+                if (CmbRaca == "Pesado")
+                {
+                    // faz um calculo para a raça pesado
+
+                }
+                if (CmbRaca == "Medio")
+                {
+                    // faz o calculo para a raça de proporção media
+
+                }
+                else
+                {
+                    // aqui faz o calculo para a raça de menor porte
+
+                }
+            }
 
         }
 
@@ -173,5 +224,14 @@ namespace ImcPet
 
         }
 
+        private void CmbTipo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CmbRaca_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }     
