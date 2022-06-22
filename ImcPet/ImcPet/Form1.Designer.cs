@@ -159,6 +159,7 @@
             this.CmbRaca.Name = "CmbRaca";
             this.CmbRaca.Size = new System.Drawing.Size(121, 31);
             this.CmbRaca.TabIndex = 1;
+            this.CmbRaca.SelectedIndexChanged += new System.EventHandler(this.CmbRaca_SelectedIndexChanged);
             // 
             // TxtDescricao
             // 
@@ -176,6 +177,7 @@
             this.CmbTipo.Name = "CmbTipo";
             this.CmbTipo.Size = new System.Drawing.Size(121, 31);
             this.CmbTipo.TabIndex = 3;
+            this.CmbTipo.SelectedIndexChanged += new System.EventHandler(this.CmbTipo_SelectedIndexChanged);
             // 
             // BtnCalcular
             // 
