@@ -19,15 +19,20 @@ namespace ImcPet
 
         string[] Pesado = new string[]
         {
-            "",
+            "Akita","Boxer","Buldogue francês","Cane corso","Doberman","Dogo argentino", "Dogue alemão",
+            "Fila brasileiro","Mastiff inglês", "Mastim tibetano","Pastor alemão","Rottweiler",
+
         };
         string[] Medio = new string[] 
-        { 
-            "",
+        {
+            "Boiadeiro australiano","Border collie","Bull terrier","Chow chow","Dálmata", "Golden retriver", 
+            "Husky siberiano","Labrador retriver", "Pastor australiano", "Pit bull","Poodle","Shar - pei","Staffordshire bull", "Weimaraner"
         };
         string[] Baixo = new string[] 
         {
-            "", 
+            "Basset hound","Bichon frisé","Boston terrier","Cavalier king","Chihuahua","cocker spaniel inglês",
+            "Dachshund","Jack russell","Lhasa apso", "Lulu da pomerânia","Maltes", "Pastor de shetland", "Pequinês",
+            "Pinscher", "Pug","Schnauzer", "Shiba", "Shih tzu", "Yorkshire"
         };
 
         private void button1_Click(object sender, EventArgs e)
@@ -37,33 +42,43 @@ namespace ImcPet
             Altura = double.Parse(TxtAltura.Text);
             Peso = double.Parse(TxtPeso.Text);
 
-            if(CmbGenero == "Feminino")
+            if (CmbTipo.Text == "Gato")
+            {
+                if (CmbGenero.Text == "Feminino")
+                {
+
+                }else if(CmbGenero.Text == "Masculino")
+                {
+
+                }
+            }
+            if(CmbGenero.Text == "Feminino")
             {
 
                 //faz um calculo aqui 
 
-                if (CmbRaca == "Pesado") 
+                if (CmbRaca.Text == "Pesado") 
                 {
                     // faz um calculo para a raça pesado
                     
                 }
-                if (CmbRaca == "Medio")
+                if (CmbRaca.Text == "Medio")
                 {
                     // faz o calculo para a raça de proporção media
 
-                }else if(CmbRaca == "Baixo"){ 
+                }else if(CmbRaca.Text == "Baixo"){ 
                     // aqui faz o calculo para a raça de menor porte
 
                 }
             }
             else if(CmbGenero.Text == "Masculino")
             {
-                if (CmbRaca == "Pesado")
+                if (CmbRaca.Text == "Pesado")
                 {
                     // faz um calculo para a raça pesado
 
                 }
-                if (CmbRaca == "Medio")
+                if (CmbRaca.Text == "Medio")
                 {
                     // faz o calculo para a raça de proporção media
 
@@ -117,110 +132,20 @@ namespace ImcPet
         {
             /*
             Dogs
-            Akita
-            Basset hound
-            Bichon frisé
-            Boiadeiro australiano
-            Border collie
-            Boston terrier
-            Boxer
-            Buldogue francês
-            Budogue inglês
-            Bull terrier
-            Cane corso
-            Cavalier king
-            Chihuahua
-            Chow chow
-            cocker spaniel inglês
-            Dachshund
-            Dálmata
-            Doberman
-            Dogo argentino
-            Dogue alemão
-            Fila brasileiro
-            Golden retriver
-            Husky siberiano
-            Jack russell
-            Labrador retriver
-            Lhasa apso
-            Lulu da pomerânia
-            Maltes
-            Maltês
-            Mastiff inglês
-            Mastim tibetano
-            Pastor alemão
-            Pastor australiano
-            Pastor de shetland
-            Pequinês
-            Pinscher
-            Pit bull
-            Poodle
-            Pug
-            Rottweiler
-            Schnauzer
-            Shar - pei
-            Shiba
-            Shih tzu
-            Staffordshire bull
-            Weimaraner
-            Yorkshire
+   
             
-            Cats
-            Persa
-            Maine Coon
-            Gato de pelo
-            Gato de bengala
-            Siamês
-            Sphynx
-            Ragdoll
-            Munchi
-            Scottish fold
-            Noruegues da floresta
-            Siberiano
-            Savannah
-            Gato de pelo curto
-            Exótico
-            Angorá
-            Himalaio
-            Azul russo
-            Gato comum
-            Sagrado da birmânia
-            Chartreux
-            Abissio
-            Bombaim
-            Kinkalow
-            Birmanês
-            Oriental
-            Ragamuffin
-            Somalli
-            Singapura
-            Curt americano
-            British Longhair
-            Toyger
-            Van turco
-            Manês
-            Donskoy
-            Oriental havana
-            Ocicat
-            Balinês
-            Laperm
-            Cymric
-            Cornish rex
-            Bobtail americano
-            Nebelung
-            Thai
-            Korat
-            Tonquinês
-            Lykoi
-            Peterbald
-            Burmillia
-            American wirehair
-            Oriental longhair
-
-            */
-
-
-
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+           
+           */
 
         }
 
