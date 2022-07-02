@@ -123,6 +123,9 @@
             // CmbTipo
             // 
             this.CmbTipo.FormattingEnabled = true;
+            this.CmbTipo.Items.AddRange(new object[] {
+            "Gato",
+            "Cachorro"});
             this.CmbTipo.Location = new System.Drawing.Point(286, 50);
             this.CmbTipo.Name = "CmbTipo";
             this.CmbTipo.Size = new System.Drawing.Size(121, 31);

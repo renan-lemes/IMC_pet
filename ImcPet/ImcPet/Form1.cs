@@ -37,40 +37,46 @@ namespace ImcPet
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double Altura = 0;
-            double Peso = 0;
+
+            double Altura;
+            double Peso;
+            double IMC;
+
             Altura = double.Parse(TxtAltura.Text);
             Peso = double.Parse(TxtPeso.Text);
-            double IMC = 0;
+
             string raca = CmbRaca.Text;
+            string nome = TxtName.Text;
+            string tipo = CmbTipo.Text;
 
             if (CmbTipo.Text == "Gato")
             {
                 if (CmbGenero.Text == "Feminino")
                 {
-                    IMC = (Peso/Altura * Altura);
-                }else if(CmbGenero.Text == "Masculino")
+                    IMC = (Peso / (Altura * Altura));
+                    MessageBox.Show($"Seu {tipo} {nome} esta com o IMC de {IMC}");
+                }
+                else if (CmbGenero.Text == "Masculino")
                 {
-                    IMC = (Peso / Altura * Altura);
+                    IMC = (Peso / (Altura * Altura));
+                    MessageBox.Show($"Seu {tipo} {nome} esta com o IMC de {IMC}");
                 }
             }
-            if(CmbGenero.Text == "Feminino")
+            if (CmbTipo.Text == "Cachorro")
             {
-               
-                //faz um calculo aqui 
-                for(int i=0;i<50;i++)
+                if (CmbGenero.Text == "Feminino")
                 {
-                    MessageBox.Show(Pesado[i]);
+                    IMC = (Peso / (Altura * Altura));
+                    MessageBox.Show($"Seu {tipo} {nome} esta com o IMC de {IMC}");
                 }
-
-            }
-            else if(CmbGenero.Text == "Masculino")
-            {
-                
+                else if (CmbGenero.Text == "Masculino")
+                {
+                    IMC = (Peso / (Altura * Altura));
+                    MessageBox.Show($"Seu {tipo} {nome} esta com o IMC de {IMC}");
+                }
             }
 
         }
-
         private void label2_Click(object sender, EventArgs e)
         {
 
