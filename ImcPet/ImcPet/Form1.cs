@@ -41,53 +41,32 @@ namespace ImcPet
             double Peso = 0;
             Altura = double.Parse(TxtAltura.Text);
             Peso = double.Parse(TxtPeso.Text);
+            double IMC = 0;
+            string raca = CmbRaca.Text;
 
             if (CmbTipo.Text == "Gato")
             {
                 if (CmbGenero.Text == "Feminino")
                 {
-
+                    IMC = (Peso/Altura * Altura);
                 }else if(CmbGenero.Text == "Masculino")
                 {
-
+                    IMC = (Peso / Altura * Altura);
                 }
             }
             if(CmbGenero.Text == "Feminino")
             {
-
+               
                 //faz um calculo aqui 
-
-                if (CmbRaca.Text == "Pesado") 
+                for(int i=0;i<50;i++)
                 {
-                    // faz um calculo para a raça pesado
-                    
+                    MessageBox.Show(Pesado[i]);
                 }
-                if (CmbRaca.Text == "Medio")
-                {
-                    // faz o calculo para a raça de proporção media
 
-                }else if(CmbRaca.Text == "Baixo"){ 
-                    // aqui faz o calculo para a raça de menor porte
-
-                }
             }
             else if(CmbGenero.Text == "Masculino")
             {
-                if (CmbRaca.Text == "Pesado")
-                {
-                    // faz um calculo para a raça pesado
-
-                }
-                if (CmbRaca.Text == "Medio")
-                {
-                    // faz o calculo para a raça de proporção media
-
-                }
-                else
-                {
-                    // aqui faz o calculo para a raça de menor porte
-
-                }
+                
             }
 
         }
@@ -130,22 +109,6 @@ namespace ImcPet
 
         private void TxtDescricao_TextChanged(object sender, EventArgs e)
         {
-            /*
-            Dogs
-   
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-           
-           */
 
         }
 
